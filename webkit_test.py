@@ -14,5 +14,5 @@ with sync_playwright() as p:
     page.goto('https://amap.com')
     page.wait_for_load_state(state='networkidle')
     page.screenshot(path='location-iphone.png')
-    time.sleep(10)
+    time.sleep(5)
     browser.close()
